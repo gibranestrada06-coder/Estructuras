@@ -1,0 +1,25 @@
+body{
+    min-height: 100vh;
+    color: #fff;
+}
+.card-menu {
+    transition: transform 0.2s, box-shadow 0.2s;
+    background-color: rgba(255, 255, 255, 0.95);
+     color: ##8D0DD7;
+}
+.card-menu:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.sueldo_ambiguedad {
+    background-color: #f8f9fa;
+}
+
+.card-metodo {
+    transition: transform 0.2s;
+}
+
+.card-metodo:hover {
+    transform: translateY(-3px);
+}

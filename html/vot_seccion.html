@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Votación por Sección</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow-lg border-0 rounded-4">
+                    <div class="card-body p-5">
+                        <h2 class="text-center mb-4 text-primary fw-bold">Votación por Sección</h2>
+                        <form id="formVotacion">
+                            <div class="mb-3">
+                                <label for="nombreUsuario" class="form-label fw-semibold">Nombre del Ciudadano:</label>
+                                <input type="text" class="form-control" id="nombreUsuario" placeholder="Ingresa tu nombre" required>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="seccionCiudad" class="form-label fw-semibold">Selecciona tu sección:</label>
+                                <select class="form-select" id="seccionCiudad" required>
+                                    <option value="" selected disabled>Elige una opción...</option>
+                                    <option value="norte">Norte</option>
+                                    <option value="sur">Sur</option>
+                                    <option value="centro">Centro</option>
+                                </select>
+                            </div>
+
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary btn-lg rounded-pill">Emitir Voto</button>
+                            </div>
+                        </form>
+
+                        <div id="resultadoVoto" class="mt-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="../js/vot_seccion.js"></script>
+</body>
+</html>

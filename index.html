@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Principal - Programas Académicos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_index.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">Estructuras de control</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                
+                <div class="dropdown">
+                    <button class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        Ingresar
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end p-3 shadow" style="width: 280px;" aria-labelledby="dropdownMenuButton">
+                        <form id="formIngreso">
+                            <h6 class="dropdown-header text-center fw-bold text-dark">Iniciar Sesión</h6>
+                            <div class="mb-2">
+                                <label for="user" class="form-label small text-muted">Usuario</label>
+                                <input type="text" class="form-control form-control-sm" id="user" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="pass" class="form-label small text-muted">Contraseña</label>
+                                <input type="password" class="form-control form-control-sm" id="pass" required>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary btn-sm">Entrar</button>
+                            </div>
+                        </form>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <header class="text-center mb-5">
+            <h1 class="display-5 fw-bold text-warning">Menú de Programas y Actividades</h1>
+            <p class="lead text-light">Selecciona el programa que deseas ejecutar</p>
+        </header>
+
+        <!-- BLOQUE I -->
+        <h3 class="text-info border-bottom pb-2 mb-4">I. Formularios, Switch y Condicionales</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+            <div class="col">
+                <div class="card card-menu h-100 p-3 rounded-4 border-0">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-primary">1. Votación por Sección</h5>
+                        <p class="card-text small text-secondary">Cuestiona la sección (norte, sur, centro) y emite un voto usando switch, funciones y eventos.</p>
+                        <a href="html/vot_seccion.html" class="btn btn-sm btn-dark">Abrir Programa</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-menu h-100 p-3 rounded-4 border-0">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-primary">2. Suma de Positivos</h5>
+                        <p class="card-text small text-secondary">Suma números positivos hasta teclear cero o negativo (If-else y case).</p>
+                        <a href="html/suma_pos.html" class="btn btn-sm btn-dark">Abrir Programa</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-menu h-100 p-3 rounded-4 border-0">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-primary">3. Ordenar 3 Números</h5>
+                        <p class="card-text small text-secondary">Pide 3 números y los muestra en pantalla ordenados de mayor a menor.</p>
+                        <a href="html/ordenar_numeros.html" class="btn btn-sm btn-dark">Abrir Programa</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-menu h-100 p-3 rounded-4 border-0">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-primary">4. Cálculo de Importe Neto</h5>
+                        <p class="card-text small text-secondary">Calcula importe neto aplicando 16% (>15,000) o 10% (en caso contrario).</p>
+                        <a href="./html/importe.html" class="btn btn-sm btn-dark">Abrir Programa</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-menu h-100 p-3 rounded-4 border-0">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-primary">5. Sueldo por Antigüedad</h5>
+                        <p class="card-text small text-secondary">Calcula sueldo base (40,000€) según los años de servicio en la empresa (a, b, c, d).</p>
+                        <a href="./html/ambiguedad_sueldo.html" class="btn btn-sm btn-dark">Abrir Programa</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="text-info border-bottom pb-2 mb-4">II. While y For</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+            <div class="col">
+                <div class="card card-menu h-100 p-3 rounded-4 border-0">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-primary">1. Suma de Impares</h5>
+                        <p class="card-text small text-secondary">Imprime la suma de todos los números impares que van del 1 al 100.</p>
+                        <a href="./html/suma_impares.html" class="btn btn-sm btn-dark">Abrir Programa</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-menu h-100 p-3 rounded-4 border-0">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-primary">2. Generador de Asteriscos</h5>
+                        <p class="card-text small text-secondary">Pide un número y muestra en pantalla la misma cantidad de asteriscos.</p>
+                        <a href="./html/asteriscos.html" class="btn btn-sm btn-dark">Abrir Programa</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-menu h-100 p-3 rounded-4 border-0">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-primary">3. Tablas de Multiplicar</h5>
+                        <p class="card-text small text-secondary">Escribe de manera estructurada las tablas de multiplicar del 1 al 10.</p>
+                        <a href="./html/tabla_multiplicar.html" class="btn btn-sm btn-dark">Abrir Programa</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="text-info border-bottom pb-2 mb-4">III. Arreglos y Métodos</h3>
+        <div class="row row-cols-1 row-cols-md-1 g-4 mb-5">
+            <div class="col">
+                <div class="card card-menu h-100 p-3 rounded-4 border-0">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-primary">Gestión de Arreglos (10 Países)</h5>
+                        <p class="card-text small text-secondary">Aplicación interactiva para evaluar funciones y métodos: Pop, Shift, Push, Unshift, Splice, Delete, reverse, sort, concat, join y length.</p>
+                        <a href="./html/arreglos_paises.html" class="btn btn-sm btn-dark">Abrir Módulo de Arreglos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById("formIngreso").addEventListener("submit", function(e) {
+            e.preventDefault();
+            alert("¡Formulario de ingreso validado correctamente!");
+        });
+    </script>
+</body>
+</html>

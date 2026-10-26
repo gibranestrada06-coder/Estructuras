@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma de Números Positivos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow-lg border-0 rounded-4">
+                    <div class="card-body p-5">
+                        <h2 class="text-center mb-4 text-primary fw-bold">Suma de Positivos</h2>
+                        <p class="text-muted small text-center">Ingresa números positivos uno a uno. El programa sumará los valores acumulados y terminará al teclear un número negativo o cero.</p>
+                        
+                        <!-- Formulario de captura -->
+                        <form id="formSuma">
+                            <div class="mb-3">
+                                <label for="numeroInput" class="form-label fw-semibold">Introduce un número:</label>
+                                <input type="number" step="any" class="form-control" id="numeroInput" placeholder="Ej. 10" required>
+                            </div>
+
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-primary btn-lg rounded-pill">Agregar Número</button>
+                                <button type="button" id="btnReiniciar" class="btn btn-outline-secondary btn-sm rounded-pill">Reiniciar Ciclo</button>
+                            </div>
+                        </form>
+
+                        <!-- Área de Resultados / Alertas -->
+                        <div id="resultadoSuma" class="mt-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Conexión al archivo JavaScript externo -->
+    <script src="../js/suma_pos.js"></script>
+</body>
+</html>
